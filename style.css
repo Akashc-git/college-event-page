@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    background: #1e3a8a;
+    color: white;
+    padding: 15px 30px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-bar {
+    margin-top: 15px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* ---------- FILTERS ---------- */
+.filters {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    flex-wrap: wrap;
+    background: white;
+}
+
+select,
+input[type="date"] {
+    padding: 8px;
+}
+
+/* ---------- EVENTS ---------- */
+.events-container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.event-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+    margin-top: 0;
+    color: #1e3a8a;
+}
+
+.event-card button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ---------- PAGINATION ---------- */
+.pagination {
+    text-align: center;
+    margin: 20px;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    background: #1e3a8a;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background: #1e3a8a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}

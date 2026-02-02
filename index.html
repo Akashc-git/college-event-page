@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Northview College - Events</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="header-top">
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
+            <h2>Northview College</h2>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Events</a>
+            <a href="#">Admissions</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search events by title or date...">
+    </div>
+</header>
+
+<!-- FILTERS -->
+<div class="filters">
+    <select id="categoryFilter">
+        <option value="All">All Categories</option>
+        <option value="Sports">Sports</option>
+        <option value="Workshop">Workshop</option>
+        <option value="Lecture">Guest Lecture</option>
+    </select>
+
+    <select id="dateFilter">
+        <option value="all">All Dates</option>
+        <option value="today">Today</option>
+        <option value="week">This Week</option>
+    </select>
+</div>
+
+<!-- EVENTS -->
+<div class="events-container" id="eventsContainer"></div>
+
+<!-- PAGINATION -->
+<div class="pagination">
+    <button onclick="prevPage()">Previous</button>
+    <button onclick="nextPage()">Next</button>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>Contact: +91 98765 43210 | info@northviewcollege.edu</p>
+    <div>
+        <a href="#">LinkedIn</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
